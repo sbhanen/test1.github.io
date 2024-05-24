@@ -4,17 +4,18 @@
     <title>This is the title of the webpage!</title>
   </head>
   <body>
-     <h2>Business Partner ID: </h2>
+     <h2>Individual Business Partner ID: </h2>
     <h2 id="mydata1"></h2>
-    
+    <h2>Account Business Partner ID: </h2>
     <h2 id="mydata2"></h2>
     <script>
       const pa = new URLSearchParams(window.location.search);
       a = pa.get("par1");
+      b = pa.get("par2");
       document.getElementById("mydata1").innerHTML = a;
-      document.getElementById("mydata2").innerHTML = 100;
+      document.getElementById("mydata2").innerHTML = b;
     </script>
-    <h2>Hansen 9</h2>
+    <h2>Hansen 10</h2>
     
     <p> New Update - This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
   </body>
