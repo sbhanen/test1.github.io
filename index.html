@@ -4,7 +4,14 @@
     <title>This is the title of the webpage!</title>
   </head>
   <body>
+    <script>
+      a = params.get("par1");
+      document.getElementById("mydata1").innerHTML = a;
+      document.getElementById("mydata2").innerHTML = US100;
+    </script>
     <h2>Hansen</h2>
+    <h2 id="mydata1"></h2>
+    h2 id="mydata2"></h2>
     <p> New Update - This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
   </body>
 </html>
