@@ -1,13 +1,18 @@
 <!doctype html>
 <html>
   <head>
-    <title>This is the title of the webpage!</title>
+    <link rel="stylesheet" href="small.css"></link>
+    <title>Mashup Called from Service Cloud V2!</title>
   </head>
   <body>
-     <h2>Individual Business Partner ID: </h2>
-    <h2 id="mydata1"></h2>
+    <div>
+     <h2>Individual Business Partner ID:</h2>
+     <h2 class="value" id="mydata1"></h2>
+    </div>
+    <div>
     <h2>Account Business Partner ID: </h2>
-    <h2 id="mydata2"></h2>
+    <h2 class="value" id="mydata2"></h2>
+  </div>
     <script>
       const pa = new URLSearchParams(window.location.search);
       a = pa.get("par1");
@@ -15,8 +20,6 @@
       document.getElementById("mydata1").innerHTML = a;
       document.getElementById("mydata2").innerHTML = b;
     </script>
-    <h2>Hansen 10</h2>
     
-    <p> New Update - This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
   </body>
 </html>
